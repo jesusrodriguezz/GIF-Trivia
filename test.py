@@ -18,5 +18,3 @@ if response.status_code == 200:
     print(gif_urls)
 else:
     print("Error occurred:", response.status_code)
-
-
