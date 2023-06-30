@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block title %}
+Chat Bot
+{% endblock %}
+{% block content %}
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>Chat Bot</h1>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+        </div>
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="message...">
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+{% endblock %}

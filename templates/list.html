@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block title %}
+List All Students
+{% endblock %}
+{% block content %}
+        <table border="1px">
+            <thead>
+                <td><strong>username</strong></td>
+                <td><strong>score</strong></td>
+                <td><strong>attempts</strong></td>
+                <td><strong>status</strong></td>
+            </thead>
+            {% for row in rows %}
+            <tr>
+                <td>{{ row["username"] }}</td>
+                <td>{{ row["score"] }}</td>
+                <td> {{ row["attempts"]}}</td>
+                <td> {{ row["status"]}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+{% endblock %}
